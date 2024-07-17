@@ -64,9 +64,9 @@ app.use(bodyParser.json());
 
 app.use(helmet());
 app.use(cors({
-  origin: 'https://portfolio-frontend-mocha.vercel.app/', // Your frontend URL
-   methods: ['GET','POST','PUT','DELETE'],
-   credentials: true // Enable this if you need to include cookies in the requests
+  origin: 'https://portfolio-frontend-mocha.vercel.app', // Your frontend URL
+   // methods: ['GET','POST','PUT','DELETE'],
+   // credentials: true // Enable this if you need to include cookies in the requests
 
 
 }))
@@ -141,7 +141,7 @@ app.post('/contact', async (req, res) => {
 
 // Start the server
 
-app.listen(5000, () => {
+app.listen(process.env.PORT, () => {
   console.log(`Server is running on port ${process.env.PORT}`);
 });
 
