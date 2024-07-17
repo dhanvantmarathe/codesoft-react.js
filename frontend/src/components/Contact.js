@@ -49,7 +49,7 @@ const Contact = () => {
     e.preventDefault();
 
    try {
-      await axios.post(`http://localhost:5000/contact`, formData);
+      await axios.post(`https://portfolio-backend-lilac-sigma.vercel.app/contact`, formData);
       
     
       alert('Message sent successfully');
@@ -61,7 +61,7 @@ const Contact = () => {
       console.log(formData);
     } catch (error) {
       console.error('Error sending message', error);
-      alert('Error sending message || from contac form');
+      alert('Error sending message || from contact form');
     }
   };
     
