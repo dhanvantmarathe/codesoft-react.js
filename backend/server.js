@@ -71,12 +71,12 @@ app.use(cors({
 
 }))
 // MongoDB URI from environment variables
-const mongoURI =  'mongodb+srv://marathe8459:CGuJOltNN08n1TJM@cluster0.oco9nvd.mongodb.net/Cluster0?retryWrites=true&w=majority';
+// const mongoURI =  'mongodb+srv://marathe8459:CGuJOltNN08n1TJM@cluster0.oco9nvd.mongodb.net/Cluster0?retryWrites=true&w=majority';
 
     
 
 // Connect to MongoDB
-mongoose.connect(mongoURI, {
+mongoose.connect(process.env.MONGO_URI, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 }).then(() => {
