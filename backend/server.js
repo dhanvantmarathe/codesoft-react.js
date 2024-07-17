@@ -64,9 +64,9 @@ app.use(bodyParser.json());
 
 app.use(helmet());
 app.use(cors({
-  // origin: 'https://portfolio-frontend-mocha.vercel.app', // Your frontend URL
-  // methods: ['GET','POST','PUT','DELETE'],
-  // credentials: true // Enable this if you need to include cookies in the requests
+  origin: 'https://portfolio-frontend-mocha.vercel.app', // Your frontend URL
+   methods: ['GET','POST','PUT','DELETE'],
+   credentials: true // Enable this if you need to include cookies in the requests
 
 
 }))
