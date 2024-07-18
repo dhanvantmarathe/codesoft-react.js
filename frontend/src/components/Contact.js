@@ -187,7 +187,7 @@ const Contact = () => {
     
   //};
   (async () => {
-    const rawResponse = await fetch('http://localhost:5000/contact', {
+    const rawResponse = await fetch('https://portfolio-backend-lilac-sigma.vercel.app/contact', {
       method: 'POST',
       headers: {
         'Accept': 'application/json',
