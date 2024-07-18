@@ -12,13 +12,13 @@ const app = express();
 app.use(bodyParser.json());
 app.use(express.static(path.join(__dirname, 'build')));
 app.use(helmet());
-app.use(cors({
-   origin: 'https://portfolio-frontend-mocha.vercel.app/contact', // Your frontend URL
-   methods: ['GET','POST','PUT','DELETE'],
-   credentials: true // Enable this if you need to include cookies in the requests
+// app.use(cors({
+//    origin: 'https://portfolio-frontend-mocha.vercel.app/contact', // Your frontend URL
+//    methods: ['GET','POST','PUT','DELETE'],
+//    credentials: true // Enable this if you need to include cookies in the requests
 
 
-}))
+// }))
 // MongoDB URI from environment variables
 const mongoURI =  'mongodb+srv://marathe8459:CGuJOltNN08n1TJM@cluster0.oco9nvd.mongodb.net/Cluster0?retryWrites=true&w=majority';
 
